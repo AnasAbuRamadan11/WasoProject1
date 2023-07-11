@@ -1,0 +1,1245 @@
+:root {
+
+    --mainColor: #f7be0c;
+    --pColor: #717275;
+    --secoundaryColor: #d53d4a;
+    --sectionPadding: 120px;
+    --backgroundColor: #f4f4f4;
+    --pColor: hsl(225, 2%, 45%);
+    ----sectionBackgroundColor: #f5f5f5;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* start global attributes */
+
+ul {
+
+    list-style: none;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+.container {
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Small screen */
+
+@media(min-width: 768px) {
+
+    .container {
+
+        width: 750px;
+    }
+}
+
+/* Medium screen */
+
+@media(min-width: 992px) {
+
+    .container {
+
+        width: 970px;
+    }
+}
+
+/* Large screen */
+
+@media(min-width: 1200px) {
+    
+    .container {
+
+        width: 1170px;
+    }
+}
+
+
+/* end global attributes */
+
+
+/* start first nav */
+
+.navbar1 {
+
+    padding: 15px 0;
+    background-color: var(--mainColor);
+}
+
+.navbar1 .navContent .partOne span {
+
+    color: #fff;
+}
+
+.navbar1 .navContent {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar1 .navContent .partOne {
+
+    display: flex;
+}
+
+.navbar1 .navContent .partOne .partOne1.one {
+
+    margin-right: 50px;
+}
+
+.navbar1 .navContent .partOne .partOne1 i {
+
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.navbar1 .navContent .partOne .partOne1 span {
+
+    font-size: 14px;
+}
+
+.navbar1 .partTwo {
+
+    display: flex;
+}
+
+.navbar1 .partTwo .partTwoIcon {
+
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.navbar1 .partTwo .partTwoIcon i {
+
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar1 .partTwo .partTwoIcon i:hover {
+
+    color: var(--mainColor);
+}
+
+@media(max-width: 768px) {
+
+    .navbar1 .navContent { 
+
+        flex-direction: column;
+    }
+
+    .navbar1 .navContent .partOne {
+
+        margin-bottom: 20px;
+    }
+}
+
+/* end first nav */
+
+
+/* start second nav */
+
+.navbar2 {
+
+    padding: 22px 0;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    background: #fff;
+    position: sticky;
+    width: 100%;
+    z-index: 10000;
+    top: 0;
+}
+
+.navbar2 .nav2Content {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar2 .nav2Content .logo  h2 {
+
+    color: var(--secoundaryColor);
+}
+
+.navbar2 .nav2Content .logo h2 span {
+
+    color: var(--mainColor);
+}
+
+
+.navbar2 .nav2Content .menu ul li {
+
+    display: inline-block;
+    margin-left: 40px;
+    transition: all 0.3s linear;
+}
+
+.navbar2 .nav2Content .menu ul li span {
+
+    font-size: 13px;
+    color: var(--mainColor);
+    font-weight: bold; 
+}
+
+.navbar2 .nav2Content .menu ul li a {
+
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+.navbar2 .nav2Content .menu ul li a:hover {
+
+    color: var(--secoundaryColor);
+}
+
+.navbar2 .nav2Content .menu .menuIcon {
+
+    display: none;
+}
+
+.navbar2 .nav2Content .menuIcon {
+
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media(max-width:995px) {
+
+
+    .navbar2 .nav2Content .menu ul li span {
+
+        color: #fff;
+        margin-right: 2px;
+    }
+
+
+    .navbar2 .nav2Content .menu ul {
+
+        display: none;
+    }
+
+    .navbar2 .nav2Content .menu .menuIcon {
+
+        display: flex;
+    }
+
+    .navbar2 .nav2Content .menu i:hover + ul{
+
+        transition: 10s;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        background: var(--mainColor);
+        margin-top: 20px;
+        z-index: 1000;
+        color: #fff;
+    }
+
+    
+    .nav2Content .menu ul li {
+
+        padding: 15px !important;
+    }
+
+
+} 
+/* start second nav */
+
+
+
+/* start header section */
+
+.header {
+
+    background-image: linear-gradient(rgb(0,0,0,0.6), rgb(0,0,0,0.6)) ,url("../images/slide/christina-wocintechchat-com-NDoVgcS_lZM-unsplash.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh - 121.6px);
+    background-size: cover;
+    background-position: top;
+}
+
+
+header .container {
+
+    position: relative;
+}
+
+.header .headerContent {
+
+    position: absolute;
+    top: 50%;
+    color: #fff;
+}
+
+.header .headerContent p {
+
+    color: #fff;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.header .headerContent p span {
+
+    color: var(--mainColor);
+}
+
+.header .headerContent h2 {
+
+    font-size: 54px;
+    margin-bottom: 40px;
+}
+
+@media(max-width:630px) {
+
+    .header .headerContent h2 {
+
+        font-size: 40px;
+    }
+}
+
+.header .headerContent h2 span {
+
+    color: var(--mainColor);
+}
+
+.header .headerContent .firstButton {
+
+    
+    background: var(--secoundaryColor);
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: all 0.3s;
+}
+
+.header .headerContent .firstButton:hover {
+
+    background-color: var(--mainColor);
+}
+
+.header .headerContent .secondButton {
+
+    
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header .headerContent .secondButton i {
+
+    color: #fff;
+    font-size: 18px;
+}
+
+/* end header section */
+
+
+/* start about section */
+
+.about {
+
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+}
+
+.about .aboutContent {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(555px, 1fr));
+    gap: 30px;
+}
+
+@media(max-width:675px) {
+
+    .about .aboutContent {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.about .aboutContent .aboutContentFirst {
+
+    position: relative;
+    border-radius: 20px;
+}
+
+.about .aboutContent .aboutContentFirst::after {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.aboutContentFirst img {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+
+
+.about .aboutContent .aboutContentFirst .aboutContentFirstInfo {
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 40px;
+    border-radius: 20px;
+    z-index: 100;
+}
+
+.about .aboutContent .aboutContentFirst .aboutContentFirstInfo h2, p {
+
+    color: #fff;
+}
+
+.about .aboutContent .aboutContentFirst .aboutContentFirstInfo h2 {
+
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about .aboutContent .aboutContentSecond .aboutContentSecond1 {
+
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
+
+.about .aboutContent .aboutContentSecond .aboutContentSecond1 .firstP {
+
+    color: #212529;
+    font-size: 18px;
+}
+
+.about .aboutContent .aboutContentSecond .aboutContentSecond1 .firstP span {
+
+    color: var(--mainColor);
+}
+
+.about .aboutContent .aboutContentSecond .aboutContentSecond1 h2 {
+
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.about .aboutContent .aboutContentSecond .aboutContentSecond1 .secondP {
+
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+    font-size: 24px;
+}
+
+.about .aboutContent .aboutContentSecond .aboutContentSecond1 .thirdP, .fourthP {
+
+    color: var(--pColor);
+    padding-bottom: 16px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.aboutContentSecond2 {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    gap: 20px;
+}
+
+/* @media(max-width:560px) {
+
+    .aboutContentSecond2 {
+
+        grid-template-columns: 1fr;
+    }
+} */
+
+.aboutContentSecond2 .aboutContentSecond21 {
+
+    background-color: var(--secoundaryColor);
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.aboutContentSecond2 .aboutContentSecond21 h2 {
+
+    margin-bottom: 40px;
+}
+
+.aboutContentSecond2 .aboutContentSecond21 button {
+
+    background: var(--mainColor);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.aboutContentSecond2 .aboutContentSecond21 button:hover {
+
+    background-color: #fff;
+    color: #000;
+}
+
+
+.aboutContentSecond2 .aboutContentSecond22 {
+
+    background-color: var(--mainColor);
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+
+.aboutContentSecond2 .aboutContentSecond22 h2 {
+
+    margin-bottom: 24px;
+}
+
+.aboutContentSecond2 .aboutContentSecond22 p {
+
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* end about section */
+
+
+/* start services section */
+
+.services {
+
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+    background-color: var(--backgroundColor);
+}
+
+.services .servicesContentText {
+
+    margin-bottom: 50px;
+}
+
+.services .servicesContentText p {
+
+    color: #212529;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.services .servicesContentText p span {
+
+    color: var(--mainColor);
+    font-weight: bold;
+}
+
+.services .servicesContentText h2  {
+
+    text-align: center;
+    font-size: 35px;
+}
+
+.services .servicesContent {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 40px;
+}
+
+@media(max-width:675px) {
+
+    .services .servicesContent {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.services .servicesContentFirst .buttonContent {
+
+    border: none;
+    background: #fff;
+    text-align: initial;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 0;
+    border-left: 7px solid var(--pColor);
+    cursor: pointer;
+    /* color: #000; */
+    transition: all 0.4s ease-in-out;
+
+}
+
+.services .servicesContentFirst .buttonContent h3 {
+
+    color: #000;
+    margin-bottom: 15px;
+    font-size: 28px;
+    transition: all 0.3s ease-in-out;
+}
+
+.services .servicesContentFirst .buttonContent p {
+
+    color: var(--pColor);
+    line-height: 1.6;
+}
+
+
+.services .servicesContentFirst .firstButton-active {
+
+    border-left-color: var(--secoundaryColor);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+
+.services .servicesContentFirst .firstButton-active h3 {
+
+    color: var(--mainColor);
+}
+
+.services .servicesContentFirst .buttonContent:hover {
+
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    border-left-color: var(--secoundaryColor);
+}
+
+.services .servicesContentFirst .buttonContent:hover h3 {
+
+    color: var(--mainColor);
+}
+
+.services .servicesContent img {
+
+    max-width: 100%;
+    height: auto;
+}
+
+.servicesContentSecond .servicesContentSecondImge {
+
+    position: relative;
+}
+
+.servicesContentSecond .servicesContentSecondImge .imgg::after {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.services .servicesContent .servicesContentSecond h4 {
+
+    font-size: 20px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+}
+
+.services .servicesContent .servicesContentSecond p {
+
+    color: var(--pColor);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.services .servicesContent .servicesContentSecond ul {
+
+    
+    list-style: disc;
+    color: var(--pColor);
+    padding-left: 32px;
+
+}
+
+.services .servicesContent .servicesContentSecond ul li {
+
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+/* end services section */
+
+
+/* start projects section */
+
+.projects {
+
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+}
+
+.services .projectsText {
+
+    margin-bottom: 50px;
+}
+
+.services .projectsText p {
+
+    color: #212529;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.projects .projectsText p span {
+
+    color: var(--mainColor);
+    font-weight: bold;
+}
+
+.projects .projectsText h2  {
+
+    text-align: center;
+    font-size: 35px;
+}
+.projectsText {
+
+    margin-bottom: 50px;
+}
+
+.projects .projectsText p {
+
+    color: #212529;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.projects .projectsText p span {
+
+    color: var(--mainColor);
+    font-weight: bold;
+}
+
+.projects .projectsText h2  {
+
+    text-align: center;
+    font-size: 35px;
+}
+
+.projectsContent .projectsContentFirst {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(366px, 1fr));
+    gap: 20px;
+}
+
+@media(max-width:675px) {
+
+    
+    .projectsContent .projectsContentFirst {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+.projectsContent .projectsContentFirst .projectDetails1 {
+
+    position: relative;
+    cursor: pointer;
+}
+
+
+.projects .projectsContent .projectsContentFirst .projectDetails1 img {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all .3s;
+}
+.projectDetails1Image::after {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.projectsContentFirst .projectDetails1 .projectDetails1Info {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+}
+
+.projectsContentFirst .projectDetails1 .projectDetails1Info span {
+
+    color: var(--mainColor);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.projectsContentFirst .projectDetails1 .projectDetails1Info .info2 {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.projectsContentFirst .projectDetails1 .projectDetails1Info .info2 h2 {
+
+    color: #fff;
+    font-size: 32px;
+    margin-top: 4px;
+}
+
+.projectsContentFirst .projectDetails1 .projectDetails1Info .info2 button {
+
+    border: none;
+    background: var(--secoundaryColor);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.projectsContentFirst .projectDetails1 .projectDetails1Info .info2 button:hover {
+
+    background-color: var(--mainColor);
+}
+
+.projectsContentFirst .projectDetails1 .projectDetails1Info .info2 button i {
+
+    font-size: 25px;
+}
+
+.projectsContentSecond {
+
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+@media(max-width:988px) {
+
+    .projectsContentSecond {
+
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.projectsContentSecond .projectDetails21 {
+
+    position: relative;
+}
+
+.projectsContentSecond ._21 {
+
+    flex-basis: 70%;
+}
+
+.projectsContentSecond ._22 {
+
+    flex-basis: 30%;
+}
+
+.projectsContentSecond ._22::after {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+
+.projectsContentSecond .projectDetails21 img {
+
+    width: 100%;
+    height: auto;
+    transition: all .3s;
+    border-radius: 20px;
+}
+
+.projectsContentSecond ._22 img {
+
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.projectsContentSecond .projectDetails21 .projectDetails21Info {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    z-index: 100;
+}
+
+.projectsContentSecond .projectDetails21 .projectDetails21Info span {
+
+    color: var(--mainColor);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.projectsContentSecond .projectDetails21 .projectDetails21Info .info2 {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.projectsContentSecond .projectDetails21 .projectDetails21Info .info2 h2 {
+
+    color: #fff;
+    font-size: 32px;
+    margin-top: 4px;
+}
+
+.projectsContentSecond .projectDetails21 .projectDetails21Info .info2 button {
+
+    border: none;
+    background: var(--secoundaryColor);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.projectsContentSecond .projectDetails21 .projectDetails21Info .info2 button:hover {
+
+    background-color: var(--mainColor);
+}
+
+.projectsContentSecond .projectDetails21 .projectDetails21Info .info2 button i {
+
+    font-size: 25px;
+}
+
+/* end projects section */
+
+.contactUs {
+
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+    background-color: var(--mainColor);
+    position: relative;
+}
+
+.contactUs .contactUsContent {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
+    gap: 60px;
+}
+
+@media(max-width:675px) {
+
+    .contactUs .contactUsContent {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+.contactUsContent p {
+
+    color: #212529;
+    font-size: 14px;
+}
+
+.contactUsContent p span {
+
+    color: #fff;
+    font-weight: bold;
+}
+
+.contactUsContent h2 {
+
+    color: #000;
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.contactUsContent .contactUsContentFirst form .mainInput {
+
+    background-color: transparent;
+    outline: none;
+    width: 48%;
+    border: none;
+    border-bottom: 3px solid #fff;
+    padding: 14px 0;
+    color: #777;
+    padding-left: 8px;
+    margin-left: 8px;
+    margin-bottom: 40px;
+    transition: all 0.3s;
+}
+
+@media(max-width:555px) {
+
+    .contactUsContent .contactUsContentFirst form .mainInput {
+
+        width: 96% !important;
+    }
+}
+
+.contactUsContent .contactUsContentFirst form .mainInput:hover {
+
+    background-color: #fff;
+}
+
+.contactUsContent .contactUsContentFirst form input[type="submit"] {
+
+    border: none;
+    background: var(--secoundaryColor);
+    color: #fff;
+    margin: 0 auto;
+    transition: all 0.3s;
+    width: 100%;
+    border-radius: 100px;
+    padding: 14px 10px;
+    font-weight: bold;
+    font-size: 16px !important;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition:all 0.3s;
+}
+
+.contactUsContent .contactUsContentFirst form input[type="submit"]:hover {
+
+    background-color: #fff;
+    color: #000;
+}
+
+.contactUsContent .contactUsContentFirst form .textArea {
+
+    width: 100%;
+    height: 200px;
+}
+
+.contactUsContent .contactUsContentSecond {
+
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    height: fit-content;
+    margin-top: -72px;
+}
+
+.contactUsContent .contactUsContentSecond h4 {
+
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.contactUsContent .contactUsContentSecond a {
+
+    display: block;
+    color: #717275;
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.contactUsContent .contactUsContentSecond a:hover {
+
+    color: var(--mainColor);
+}
+
+
+
+.contactUsContent .contactUsContentSecond a i {
+
+    color: var(--mainColor);
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.contactUsContent .contactUsContentSecond .contactIframe {
+
+    margin-top: 40px;
+}
+
+.contactUsContent .contactUsContentSecond .contactIframe iframe  {
+
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+}
+
+/* start contact us section */
+
+
+/* start footer section */
+
+.footer {
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--mainColor);
+}
+
+.footer .footerContent {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerContent .footerContentFirst {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+@media(max-width:992px) {
+
+    .footer .footerContent {
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerContent .footerContentFirst {
+
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.footerContentFirst .partTwo2 {
+
+    display: flex;
+}
+
+.footerContentFirst .partTwo2 .partTwoIcon {
+
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.footerContentFirst .partTwo2 .partTwoIcon i {
+
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footerContentFirst .partTwo2 .partTwoIcon i:hover {
+
+    color: var(--mainColor);
+}
+
+.footerContentSecond p {
+
+    color: #fff;
+}
+
+@media(max-width:465px) {
+
+    .footerContentSecond p {
+
+        font-size: 14px;
+    }
+}
+
+.footerContentSecond p span {
+
+    color: var(--pColor);
+    font-weight: bold;
+}
+
+
+
+/* end footer section */
+
